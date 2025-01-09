@@ -1,0 +1,38 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  /* background: #1a1a1a; */
+  color: #f0f0f0;
+  z-index: 99999;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.scrambleText {
+  padding: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  transition: color 0.2s ease-out;
+}
+
+.scrambleText:hover {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin-top: 65px;
+    height: 7vh;
+  }
+  .scrambleText {
+    font-size: 16px;
+  }
+}

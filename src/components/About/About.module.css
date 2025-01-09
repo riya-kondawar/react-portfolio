@@ -1,0 +1,162 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: 73px;
+    margin-top: 65px;
+    margin-bottom: 35px;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 1;
+}
+
+.heading {
+    display: flex;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.aboutImage1 {
+    display: none;
+    margin: -70px -120px -80px 0px;
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutImage2 {
+    margin: -80px -120px -80px -100px;
+    width: 70%;
+    /* background-color: #fff; */
+}
+
+.aboutItems {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 20px;
+    background-image: linear-gradient(90deg,
+            rgba(165, 215, 232, 0.42) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.aboutItem:hover {
+    background-size: 100% 100%;
+}
+
+.aboutItem h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.aboutItem p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 45px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .aboutImage1 {
+        display: block;
+    }
+
+    .aboutImage2 {
+        display: none;
+    }
+
+    .aboutItems {
+        margin-top: 29px;
+        gap: 20px;
+    }
+
+    .aboutItem {
+        padding-left: 0;
+        padding-right: 0;
+        padding: 10px;
+    }
+
+    .aboutItem h3 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .aboutItem p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 414px) {
+
+    .container {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 45px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .aboutImage1 {
+        display: block;
+    }
+
+    .aboutImage2 {
+        display: none;
+    }
+
+    .aboutItems {
+        margin-top: 29px;
+        gap: 20px;
+    }
+
+    .aboutItem {
+        padding-left: 0;
+        padding-right: 0;
+        padding: 10px;
+    }
+
+    .aboutItem h3 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .aboutItem p {
+        font-size: 14px;
+    }
+}
