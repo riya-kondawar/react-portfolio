@@ -13,18 +13,6 @@ const Hero = () => {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     return (
         <section className={styles.container}>
 
@@ -36,9 +24,9 @@ const Hero = () => {
                 <p
                     className={styles.description}>
                     I'm <b>Riya</b>, <br />
-                    Full-stack developer <br />
-                    who brings ideas to life on the web💻.
-                    {/* I craft seamless user experiences with React.js, and build reliable backends using Node.js. <br /> */}
+                    Data Analyst | Web developer <br />
+                    Who brings ideas to life on the web💻. <br />
+                    I craft seamless user experiences with React.js, and build reliable backends using Node.js. <br />
                 </p>
                 <div className={styles.buttons} >
                     <a
