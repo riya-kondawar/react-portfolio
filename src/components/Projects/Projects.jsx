@@ -6,52 +6,82 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      image: "projects/duo-anim-website.png",
+      image: "projects/PawFinds.png",
+      title: "PawFinds",
+      description: "Pet Adoption WebApp using MERN stack.",
+      website: "https://riya-pawfinds.vercel.app/",
+      github: "https://github.com/riya-kondawar/PawFinds"
+    },
+    {
+      id: 2,
+      image: "projects/PowerBI.png",
+      title: "PowerBI Dashboard",
+      description: "E-commerce sales data analysis visualization.",
+      github: "https://github.com/riya-kondawar/powerBI-report-e-commerce-sales-data-analysis"
+    },
+    {
+      id: 3,
+      image: "projects/FakeTrue.png",
+      title: "Fake News Detection",
+      description: "Used NLP to detect if a piece of news is real or fake.",
+      github: "https://github.com/riya-kondawar/Real-n-Fake-News-Detection"
+    },
+    {
+      id: 4,
+      image: "projects/duoStudio.png",
       title: "MotorWrks",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, est.",
+      description: "Built using GSAP.",
       website: "https://riya-motor-wrks.vercel.app/",
       github: "https://github.com/riya-kondawar/MotorWrks"
     },
     {
-      id: 2,
-      image: "projects/college-dekho.png",
-      title: "College Dekho",
-      description: "College Dekho",
-      website: "https://riya-kondawar.github.io/College-Dekho/",
-      github: "https://github.com/riya-kondawar/College-Dekho"
+      id: 5,
+      image: "projects/WordToPDF.png",
+      title: "Word TO PDF converter",
+      description: "Built using React.js",
+      website: "https://riya-word-to-pdf.vercel.app/",
+      github: "https://github.com/riya-kondawar/WordToPDF-react"
     },
     {
-      id: 3,
-      image: "projects/duo-anim-website.png",
-      title: "Login Form",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, est.",
-      website: "https://riya-kondawar.github.io/react-form/",
-      github: "https://github.com/riya-kondawar/react-form"
-    },
-    {
-      id: 4,
-      image: "projects/duo-anim-website.png",
-      title: "Hotel.in",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, est.",
+      id: 6,
+      image: "projects/PuneWebsite.png",
+      title: "Pune tourist places",
+      description: "Built using HTML & CSS",
       website: "https://riya-kondawar.github.io/Hotel.in/",
       github: "https://github.com/riya-kondawar/Hotel.in"
     },
     {
-      id: 5,
-      image: "projects/duo-anim-website.png",
-      title: "Cafe Menu",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, est.",
-      website: "https://riya-kondawar.github.io/Cafe-Menu/",
-      github: "https://github.com/riya-kondawar/Cafe-Menu"
+      id: 7,
+      image: "projects/ToDo.png",
+      title: "ToDo App",
+      description: "Built using javascript & CSS.",
+      website: "https://riya-todo.vercel.app/",
+      github: "https://github.com/riya-kondawar/College-Dekho"
     },
     {
-      id: 6,
-      image: "projects/duo-anim-website.png",
-      title: "Pune Tourism",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, est.",
-      website: "https://riya-kondawar.github.io/Pune-TKU/",
-      github: "https://github.com/riya-kondawar/Pune-TKU"
+      id: 8,
+      image: "projects/Hotel.png",
+      title: "Hotel.in",
+      description: "Built using HTML & CSS",
+      website: "https://riya-kondawar.github.io/Hotel.in/",
+      github: "https://github.com/riya-kondawar/Hotel.in"
     },
+    {
+      id: 9,
+      image: "projects/Pizza.png",
+      title: "Pizza Planet",
+      description: "Built using HTML &, CSS",
+      website: "https://riya-pizza-planet.vercel.app/",
+      github: "https://github.com/riya-kondawar/Free-Code-Camp/tree/main/product-landing-page"
+    },
+    // {
+    //   id: 10,
+    //   image: "projects/CollegeWebsite.png",
+    //   title: "College Dekho",
+    //   description: "Colleges listed in Pune",
+    //   website: "https://riya-kondawar.github.io/College-Dekho/",
+    //   github: "https://github.com/riya-kondawar/College-Dekho"
+    // },
   ];
 
   return (

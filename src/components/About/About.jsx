@@ -15,22 +15,29 @@ const About = () => {
                     <li className={styles.aboutItem}>
                         <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor Icon" />
                         <div className={styles.aboutItemText}>
-                            <h3>Frontend Developer</h3>
-                            <p className={styles.description}>I'm a frontend developer with experience in building responsive & optimized sites</p>
+                            <h3>Data Analytics</h3>
+                            <p className={styles.description}>Proficient in Python, Power BI, and machine learning, specializing in data visualization, predictive modeling, and interactive dashboards.</p>
                         </div>
                     </li>
                     <li className={styles.aboutItem}>
                         <img src={getImageUrl("about/serverIcon.png")} alt="UI Icon" />
                         <div className={styles.aboutItemText}>
-                            <h3>Backend Developer</h3>
-                            <p>I'm a experience in developing fast and optimized backend systems & APIs</p>
+                            <h3>Full-Stack Web Development</h3>
+                            <p className={styles.description}>Skilled in MERN stack, Tailwind CSS, RESTful APIs, and state management using context API, creating scalable, user-centric applications.</p>
                         </div>
                     </li>
                     <li className={styles.aboutItem}>
                         <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor Icon" />
                         <div className={styles.aboutItemText}>
-                            <h3>UI Designer</h3>
-                            <p>I have designed multiple landing pages and have created design systems as well</p>
+                            <h3>Technical Problem Solving</h3>
+                            <p className={styles.description}>Expertise in technologies like React.js, MongoDB, and TensorFlow, delivering innovative, robust solutions.</p>
+                        </div>
+                    </li>
+                    <li className={styles.aboutItem}>
+                        <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor Icon" />
+                        <div className={styles.aboutItemText}>
+                            <h3>Leadership and Collaboration</h3>
+                            <p className={styles.description}>Managed events and content strategy as Media Head at IRIS, focusing on AI, data science, and web development.</p>
                         </div>
                     </li>
                 </ul>
