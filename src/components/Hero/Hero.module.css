@@ -122,41 +122,6 @@
     100% { transform: translateY(0px); }
 }
 
-/* 
-@media screen and (max-width: 1024px) {
-    .container {
-        flex-direction: column-reverse;
-        padding: 45px 0;
-        text-align: center;
-    }
-
-    .content {
-        align-items: center;
-        max-width: 100%;
-    }
-
-    .title {
-        font-size: 2.5rem;
-        margin: -3rem 0 0 0;
-    }
-
-    .description {
-        font-size: 1.1rem;
-    }
-
-    .heroImg {
-        max-width: 300px;
-        margin: 0 ;
-    }
-
-    .buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-} */
-
-
-
 @media screen and (max-width: 1024px) {
     .heroWrapper {
         margin: 2rem 1rem; /* reduce large margin on small screens */

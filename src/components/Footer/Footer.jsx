@@ -1,4 +1,3 @@
-
 import { getImageUrl } from "../../utils";
 import styles from "./Footer.module.css";
 
