@@ -1,162 +1,206 @@
 @import "../../vars.css";
 
 .container {
-    position: relative;
-    background-color: rgba(12, 12, 12, 0.6);
-    border-radius: 15px;
-    padding: 73px;
-    margin-top: 65px;
-    margin-bottom: 35px;
-    margin-left: 10%;
-    margin-right: 10%;
-    z-index: 1;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
 }
 
-.heading {
-    display: flex;
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* .title {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+} */
+
+.gradientText {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .title {
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
 }
 
-.aboutImage1 {
-    display: none;
-    margin: -70px -120px -80px 0px;
-    width: 150px;
-    height: 150px;
+.subtitle {
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
 }
 
-.aboutImage2 {
-    margin: -80px -120px -80px -100px;
-    width: 70%;
-    /* background-color: #fff; */
+.profileSection {
+  width: 30%;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.aboutItems {
-    color: var(--color-text);
-    display: flex;
+.profileImage {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 16px;
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+}
+
+.profileHighlights {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.highlightItem {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skillsGrid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.skillCard {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.15);
+  border-color: var(--color-accent);
+}
+
+.skillHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.skillHeader img {
+  width: 40px;
+  height: 40px;
+}
+
+.skillHeader h3 {
+  color: var(--color-dark);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.skillCard p {
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.skillsTechSection {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.techTitle {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.techCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: var(--color-dark);
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.techCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.15);
+  border-color: var(--color-primary);
+}
+
+.icons {
+  font-size: 2rem;
+  color: var(--color-accent); /* Or customize */
+  margin-right: 0.5rem;
+}
+
+.icon {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 1024px) {
+  .content {
     flex-direction: column;
-    gap: 30px;
+  }
+
+  .profileSection {
+    width: 100%;
+    position: static;
+    margin-bottom: 40px;
+  }
+
+  .skillsGrid {
+    width: 100%;
+  }
 }
 
-.aboutItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 20px;
-    list-style: none;
-    padding: 20px;
-    background-image: linear-gradient(90deg,
-            rgba(165, 215, 232, 0.42) 0%,
-            rgba(255, 255, 255, 0) 100%);
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    transition: 0.4s;
-}
+@media (max-width: 768px) {
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
 
-.aboutItem:hover {
-    background-size: 100% 100%;
-}
+  .title {
+    font-size: 2rem;
+  }
 
-.aboutItem h3 {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.aboutItem p {
-    font-size: 14px;
-}
-
-@media screen and (max-width: 830px) {
-    .container {
-        background-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 45px;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .aboutImage1 {
-        display: block;
-    }
-
-    .aboutImage2 {
-        display: none;
-    }
-
-    .aboutItems {
-        margin-top: 29px;
-        gap: 20px;
-    }
-
-    .aboutItem {
-        padding-left: 0;
-        padding-right: 0;
-        padding: 10px;
-    }
-
-    .aboutItem h3 {
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .aboutItem p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 360px) and (max-width: 414px) {
-
-    .container {
-        background-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 45px;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .aboutImage1 {
-        display: block;
-    }
-
-    .aboutImage2 {
-        display: none;
-    }
-
-    .aboutItems {
-        margin-top: 29px;
-        gap: 20px;
-    }
-
-    .aboutItem {
-        padding-left: 0;
-        padding-right: 0;
-        padding: 10px;
-    }
-
-    .aboutItem h3 {
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .aboutItem p {
-        font-size: 14px;
-    }
+  .profileImage {
+    max-width: 220px;
+  }
 }

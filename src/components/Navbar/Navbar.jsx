@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from "./Navbar.module.css";
 import { getImageUrl } from './../../utils';
 
@@ -27,9 +27,6 @@ const Navbar = () => {
                         <li>
                             <a href="#about">About</a>
                         </li>
-                        {/* <li>
-                            <a href="#experience">Experience</a>
-                        </li> */}
                         <li>
                             <a href="#projects">Projects</a>
                         </li>
@@ -43,4 +40,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar; 

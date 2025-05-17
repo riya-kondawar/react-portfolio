@@ -1,18 +1,34 @@
 @import "./vars.css";
 
-.App{
-    /* background-color: var(--color-bg); */
-    /* background-color: #dd6f6f; */
-    /* width: 100%; */
-    height: 100%;
-    font-family: var(--font-roboto);
+.App {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+    width: 100%;
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-roboto);
+    font-family: inherit;
     text-decoration: none;
     list-style: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: var(--text-glow);
+}
+
+code, pre {
+    font-family: var(--font-code);
 }

@@ -1,38 +1,44 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 7vh;
-  /* background: #1a1a1a; */
-  color: #f0f0f0;
-  z-index: 99999;
-  margin-left: 5%;
-  margin-right: 5%;
+    position: fixed;
+    top: 50px; /* Adjust based on your navbar height */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5%;
+    z-index: 100; /* Below navbar but above other content */
+    background-color: var(--color-bg);
+    border-bottom: 1px solid rgba(79, 70, 229, 0.1);
 }
 
 .scrambleText {
-  padding: 5px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-  transition: color 0.2s ease-out;
+    padding: 8px 16px;
+    color: var(--color-dark);
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    text-align: center;
+    transition: all 0.2s ease-out;
+    border-radius: 4px;
+    background: rgba(79, 70, 229, 0.05);
 }
 
 .scrambleText:hover {
-  color: var(--color-primary);
+    color: var(--color-primary);
+    background: rgba(79, 70, 229, 0.1);
 }
 
 @media screen and (max-width: 830px) {
-  .container {
-    margin-top: 65px;
-    height: 7vh;
-  }
-  .scrambleText {
-    font-size: 16px;
-  }
+    .container {
+        top: 50px; /* Adjust for mobile navbar height if different */
+        padding: 8px 5%;
+    }
+    
+    .scrambleText {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
 }

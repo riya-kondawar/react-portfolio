@@ -1,12 +1,46 @@
-:root{
-    /* colors */
-    --color-text: #fff;
-    --color-primary: #576cbc;
-    --color-secondary: #19376d;
-    --color-dark: #0b2447;
-    --color-bg: #04152d;
 
-    /* fonts */
-    /* --font-roboto: "Roboto"; */
-    --font-roboto: 'Courier New', Courier, monospace;
+:root {
+    /* Light Vibrant Color Scheme with Seafoam Green */
+    --color-text: #2d3748;          /* Dark gray-blue for text */
+    --color-primary: #2ECC71;       /* Seafoam green */
+    --color-secondary: #27ae60;     /* Darker Seafoam green for contrast */
+    --color-dark: #14532d;          /* Deep green for dark elements */
+    --color-bg: #f8fafc;            /* Light background */
+    --color-accent: #ec4899;        /* Pink accent */
+    
+    /* Font Stack */
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-code: 'Roboto Mono', monospace;
+}
+
+:root {
+    /* Light Vibrant Color Scheme */
+    --color-text: #2d3748;          /* Dark gray-blue for text */
+    --color-primary: #4f46e5;       /* Vibrant indigo */
+    --color-secondary: #7c3aed;     /* Electric purple */
+    --color-dark: #1e293b;          /* Dark blue-gray */
+    --color-bg: #f8fafc;            /* Light background */
+    --color-accent: #ec4899;        /* Pink accent */
+    
+    /* Font Stack */
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-code: 'Roboto Mono', monospace;
+}
+
+:root {
+  /* Colorful Vibrant Palette */
+  --color-text: #1e293b;          /* Dark navy for text, good contrast */
+  --color-primary: #7c3aed;       /* Vivid Blue (bright & clear) */
+  --color-secondary: #10b981;     /* Fresh Green (minty & vibrant) */
+  --color-dark: #0f172a;          /* Deep navy, for contrast */
+  --color-bg: #ffffff;            /* Clean white background */
+  --color-accent: #f43f5e;        /* Bold Pink (hot pink/red) */
+  --color-highlight: #facc15;     /* Bright Yellow (for highlights) */
+  
+  /* Fonts */
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: 'Roboto Mono', monospace;
 }

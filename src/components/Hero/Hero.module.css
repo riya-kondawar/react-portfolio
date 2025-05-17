@@ -1,177 +1,202 @@
 @import "../../vars.css";
+* {
+    margin: 0;
+    padding: 0;
+}
+.heroWrapper {
+    width: 100%;
+    position: relative;
+    margin: 5rem;
+}
 
 .container {
-    height: 80vh;
-    width: 85%;
-    position: relative;
+    min-height: calc(100vh - 60px); /* Adjust for navbar height */
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    /* height: 100%; */
-    /* margin-top: 35px; */
-    z-index: 1;
-    margin: auto auto 35px auto ;
+    justify-content: center;
+    padding: 0 5%;
+    margin: 0 auto;
+    background-color: var(--color-bg);
+    gap: 40px;
 }
 
 .content {
-    height: 50%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    color: var(--color-text);
-    z-index: 1;
-    gap: 15px;
+    gap: 1.5rem;
+    z-index: 2;
+    padding-top: 20px; 
 }
 
 .title {
-    font-size: 56px;
-    font-weight: 900;
-    background: linear-gradient(90deg,
-            rgba(255, 255, 255, 1) 70%,
-            rgba(255, 255, 255, 0) 120%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .description {
-    font-size: 18px;
-    /* margin-bottom: 32px; */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.highlight {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.jobTitle {
+    color: var(--color-secondary);
+    font-weight: 600;
 }
 
 .buttons {
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
     align-items: center;
+    margin-top: 1rem;
 }
 
-.Btn1 {
-    text-decoration: none;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border-radius: 100px;
-    font-size: 18px;
-    padding: 7px 18px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+.contactBtn {
+    padding: 0.8rem 1.8rem;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
-.Btn2 {
-    text-decoration: none;
-    border: 3px solid var(--color-primary);
-    color: var(--color-text);
-    border-radius: 100px;
-    font-size: 18px;
-    padding: 7px 18px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-}
-.buttons {
-    display: flex;
-    gap: 20px;
-    align-items: center; /* Align Lordicon with buttons */
+.contactBtn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
 }
 
-lord-icon {
-    margin: -10px;
-    transition: transform 0.3s ease;
+.resumeBtn {
+    padding: 0.8rem 1.8rem;
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
-lord-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+.resumeBtn:hover {
+    background: rgba(79, 70, 229, 0.05);
+    transform: translateY(-2px);
+}
+
+.iconContainer {
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.iconContainer:hover {
+    transform: scale(1.1);
 }
 
 .heroImg {
-    /* width: 50%; */
-    /* margin: -20px; */
-    z-index: 1;
-    animation-name: floating;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes floating {
-    0% {
-        transform: translate(0, 0px);
-    }
-
-    50% {
-        transform: translate(0, 10px);
-    }
-
-    100% {
-        transform: translate(0, 0px);
-    }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
+
 /* 
-.topBlur {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    min-width: 350px;
-    min-height: 350px;
-    top: -128px;
-    left: -10vw;
-    border-radius: 764px;
-    background: rgba(25, 55, 109, 07);
-    filter: blur(100px);
-    z-index: 0;
-}
-
-.bottomBlur {
-    position: absolute;
-    width: 70%;
-    height: 50%;
-    min-width: 250px;
-    min-height: 350px;
-    top: 246px;
-    right: -25px;
-    border-radius: 764px;
-    background: rgba(25, 55, 109, 07);
-    filter: blur(100px);
-    z-index: 0;
-    overflow: hidden;
-} */
-
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1024px) {
     .container {
         flex-direction: column-reverse;
-        /* margin-top: 35px; */
-        margin-bottom: 50px;
-        margin-left: 5%;
-        margin-right: 5%;
+        padding: 45px 0;
+        text-align: center;
     }
 
     .content {
         align-items: center;
+        max-width: 100%;
     }
 
     .title {
-        font-size: 52px;
-        text-align: center;
+        font-size: 2.5rem;
+        margin: -3rem 0 0 0;
     }
 
     .description {
-        text-align: center;
-        font-size: 18px;
-        /* margin-bottom: 13px; */
-    }
-    .buttons {
-        gap: 10px;
-    }
-
-    .Btn1, .Btn2 {
-        font-size: 16px;
-        font-weight: 600;
-        padding: 7px 15px;
-    }
-    lord-icon {
-        margin: 0;
+        font-size: 1.1rem;
     }
 
     .heroImg {
-        margin: -10px;
-        /* width: 226px; */
-        width: 80%;
-        max-width: 350px;
-        /* background-color: #fff; */
+        max-width: 300px;
+        margin: 0 ;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} */
+
+
+
+@media screen and (max-width: 1024px) {
+    .heroWrapper {
+        margin: 2rem 1rem; /* reduce large margin on small screens */
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        margin: 0 -15px;
+        padding: 45px 20px;
+        text-align: center;
+        
+        /* Add these to center vertically and horizontally */
+        justify-content: center; /* center along main axis (vertical now) */
+        align-items: center;     /* center along cross axis */
+        min-height: auto;        /* allow natural height on mobile */
+    }
+
+    .content {
+        align-items: center;
+        max-width: 100%;
+        margin-bottom: 2rem; /* add some spacing below text */
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin: -3rem 0 0 0;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .heroImg {
+        max-width: 250px;
+        margin: 70px 0 0 0 ;
+        
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
